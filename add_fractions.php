@@ -1,6 +1,3 @@
-<div style="margin:auto;text-align:center;width:100%;">
-    <button id="get_function" style="display:none;" onclick="add_fractions()">Click Me</button>
-</div>
 
 <script src="all_js.js"></script>
 <?php
@@ -55,8 +52,7 @@ echo '</div>';
 ?>
 
 <script>
-    document.getElementById("get_function").click();
-    function add_fractions() {
+   function add_fractions() {
         var first_numerator = <?php echo $a?>;
         var first_denominator = <?php echo $b?>;
         var second_numerator = <?php echo $c?>;
@@ -70,6 +66,7 @@ echo '</div>';
         document.getElementById("result_denominator").innerHTML = result.denominator;
         
     }
+    add_fractions();
 </script>
 
 
